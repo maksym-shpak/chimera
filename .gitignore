@@ -1,0 +1,28 @@
+# Node.js
+node_modules/
+
+# Build outputs
+dist/
+.turbo/
+.next/
+
+# Testing
+coverage/
+
+# Misc
+.DS_Store
+.env*
+
+# pnpm
+.pnpm-store/
+
+# Cursor
+.cursor/
+
+# Storybook
+storybook-static/
+
+# Cache
+.cache/
+.vscode/
+.idea/ 
