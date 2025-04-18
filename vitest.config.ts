@@ -5,7 +5,7 @@ export default defineConfig({
     test: {
         globals: true,
         environment: 'happy-dom',
-        include: ['packages/*/*/src/**/*.ts', 'packages/*/*/src/**/*.tsx'],
+        include: ['packages/*/*/src/**/*.test.ts', 'packages/*/*/src/**/*.test.tsx'],
         alias: {
             '@chimera/*': path.resolve(__dirname, 'packages/*/src')
         }

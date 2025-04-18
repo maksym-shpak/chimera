@@ -1,7 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import { defaultHttpClient } from './httpClient';
 
-// Mock global.fetch
 const mockFetch = vi.fn();
 global.fetch = mockFetch;
 

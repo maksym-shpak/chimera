@@ -1,12 +1,10 @@
 import { HttpClient } from '@chimera/infra.http-client';
 
-// Define the PriceData interface
 export interface PriceData {
     symbol: string;
     price: number;
 }
 
-// Create the createCoingeckoClient function
 export function createCoingeckoClient(http: HttpClient) {
     return {
         async getPrices(symbols: string[]): Promise<PriceData[]> {
@@ -24,9 +22,3 @@ export function createCoingeckoClient(http: HttpClient) {
         }
     };
 }
-
-// Usage example
-// const client = createCoingeckoClient(defaultHttpClient);
-// client.getPrices(['bitcoin', 'ethereum'])
-//   .then(prices => console.log(prices))
-//   .catch(error => console.error('Error:', error)); 
