@@ -8,7 +8,7 @@
     },
     "private": false,
     "dependencies": {
-        "@chimera/infra.http-client": "^0.1.0"
+        "@chimera/infra.http-client": "^0.1.1"
     },
     "publishConfig": {
         "registry": "https://npm.cloudsmith.io/chimera/chimera/"

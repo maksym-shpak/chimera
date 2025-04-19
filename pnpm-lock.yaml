@@ -76,7 +76,7 @@ importers:
   packages/ds/price-ticker.coingecko:
     dependencies:
       '@chimera/infra.http-client':
-        specifier: ^0.1.0
+        specifier: ^0.1.1
         version: 0.1.1
 
   packages/infra/http-client: {}
