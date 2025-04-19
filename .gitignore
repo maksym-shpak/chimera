@@ -27,3 +27,6 @@ storybook-static/
 .vscode/
 .idea/ 
 *storybook.log
+
+#npm
+.npmrc
