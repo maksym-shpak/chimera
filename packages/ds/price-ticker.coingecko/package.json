@@ -7,6 +7,9 @@
         ".": "./src/index.ts"
     },
     "private": false,
+    "dependencies": {
+        "@chimera/infra.http-client": "^0.1.0"
+    },
     "publishConfig": {
         "registry": "https://npm.cloudsmith.io/chimera/chimera/"
     }
