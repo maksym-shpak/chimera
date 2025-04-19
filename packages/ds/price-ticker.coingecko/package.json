@@ -1,6 +1,6 @@
 {
     "name": "@chimera/ds.price-ticker.coingecko",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "module",
     "main": "src/index.ts",
     "exports": {
@@ -8,7 +8,7 @@
     },
     "private": false,
     "dependencies": {
-        "@chimera/infra.http-client": "^0.1.1"
+        "@chimera/infra.http-client": "^0.1.2"
     },
     "publishConfig": {
         "registry": "https://npm.cloudsmith.io/chimera/chimera/"
