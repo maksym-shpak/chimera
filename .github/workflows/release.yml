@@ -30,4 +30,4 @@ jobs:
         run: echo "No build step required"
 
       - name: Publish packages
-        run: pnpm -r publish --access public --no-git-checks
+        run: pnpm -r --filter "@chimera/*" publish --access public --no-git-checks
