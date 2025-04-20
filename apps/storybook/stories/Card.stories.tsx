@@ -6,4 +6,4 @@ export default {
     component: Card,
 };
 
-export const Default = () => <Card>Hello from Card</Card>; 
+export const Default = () => <Card>Hello from Cards</Card>; 
