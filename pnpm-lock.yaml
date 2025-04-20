@@ -60,6 +60,9 @@ importers:
       '@vitest/coverage-v8':
         specifier: 3.1.1
         version: 3.1.1(@vitest/browser@3.1.1)(vitest@3.1.1)
+      chromatic:
+        specifier: ^11.28.2
+        version: 11.28.2
       happy-dom:
         specifier: ^17.4.4
         version: 17.4.4
@@ -72,18 +75,6 @@ importers:
       vitest:
         specifier: ^3.1.1
         version: 3.1.1(@types/node@22.14.1)(@vitest/browser@3.1.1)(happy-dom@17.4.4)
-
-  packages/ds/price-ticker.coingecko:
-    dependencies:
-      '@chimera/infra.http-client':
-        specifier: ^0.1.1
-        version: 0.1.1
-
-  packages/infra/http-client: {}
-
-  packages/types/price-ticker: {}
-
-  packages/ui/price-ticker: {}
 
 packages:
 
@@ -219,9 +210,6 @@ packages:
 
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
-
-  '@chimera/infra.http-client@0.1.1':
-    resolution: {integrity: sha512-gsu4U7GjoavZzL4vQ9YjebKtP6mKCoaDTbigKkwQ5N3s8G2OXKiOEWMEi3BakFA6BxjTwNmcNShFGa/1cPCSLQ==, tarball: https://npm.cloudsmith.io/chimera/chimera/@chimera/infra.http-client/-/0.1.1/infra.http-client-0.1.1.tgz}
 
   '@chromatic-com/storybook@3.2.6':
     resolution: {integrity: sha512-FDmn5Ry2DzQdik+eq2sp/kJMMT36Ewe7ONXUXM2Izd97c7r6R/QyGli8eyh/F0iyqVvbLveNYFyF0dBOJNwLqw==}
@@ -2268,8 +2256,6 @@ snapshots:
       fs-extra: 7.0.1
       human-id: 4.1.1
       prettier: 2.8.8
-
-  '@chimera/infra.http-client@0.1.1': {}
 
   '@chromatic-com/storybook@3.2.6(react@19.1.0)(storybook@8.6.12(prettier@2.8.8))':
     dependencies:

@@ -23,7 +23,7 @@ const config: StorybookConfig = {
     config.resolve = config.resolve || {};
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@chimera/ui.price-ticker': join(__dirname, '../packages/ui/price-ticker/src')
+      '@chimera/ui.card': join(__dirname, '../packages/ui/card/src')
     };
     return config;
   }

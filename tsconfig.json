@@ -7,22 +7,14 @@
         "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
-            "@chimera/infra.http-client": [
-                "packages/infra/http-client/src"
-            ],
-            "@chimera/ds.price-ticker.coingecko": [
-                "packages/ds/price-ticker.coingecko/src"
-            ],
-            "@chimera/ui.price-ticker": [
-                "packages/ui/price-ticker/src"
-            ],
-            "@chimera/types.price-ticker": [
-                "packages/types/price-ticker/src"
+            "@chimera/*": [
+                "packages/*/src"
             ]
         },
         "target": "ES2021"
     },
     "include": [
-        "packages/**/*"
+        "packages/**/*",
+        "apps/**/*"
     ]
 }
