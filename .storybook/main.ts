@@ -1,8 +1,4 @@
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
 import type { StorybookConfig } from '@storybook/react-vite';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const config: StorybookConfig = {
   "stories": [
@@ -19,13 +15,6 @@ const config: StorybookConfig = {
     "name": "@storybook/react-vite",
     "options": {}
   },
-  viteFinal: async (config) => {
-    config.resolve = config.resolve || {};
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@chimera/ui.card': join(__dirname, '../packages/ui/card/src')
-    };
-    return config;
-  }
+  viteFinal: async (config) => config
 };
 export default config;
