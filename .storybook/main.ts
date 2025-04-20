@@ -1,4 +1,4 @@
-import { join } from 'path';
+import path from 'path';
 import type { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
@@ -20,7 +20,7 @@ const config: StorybookConfig = {
     config.resolve = config.resolve || {};
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
-      '@chimera/ui.card': join(__dirname, '../../packages/ui/card/src'),
+      '@chimera/ui.card': path.resolve(process.cwd(), 'packages/ui/card/src'),
     };
     return config;
   },
