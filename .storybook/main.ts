@@ -22,7 +22,21 @@ const config: StorybookConfig = {
       ...(config.resolve.alias || {}),
       '@chimera/ui.card': path.resolve(process.cwd(), 'packages/ui/card/src'),
       '@chimera/ui.icon': path.resolve(process.cwd(), 'packages/ui/icon/src'),
+      '@chimera/ui.stat-card': path.resolve(process.cwd(), 'packages/ui/stat-card/src'),
+      '@chimera/ui.styles': path.resolve(process.cwd(), 'packages/ui/styles/src'),
+      '@chimera/lib.utils': path.resolve(process.cwd(), 'packages/lib/utils/src'),
     };
+
+    config.css = {
+      ...(config.css || {}),
+      postcss: {
+        plugins: [
+          (await import('@tailwindcss/postcss')).default,
+          (await import('autoprefixer')).default,
+        ],
+      },
+    };
+
     return config;
   },
 };

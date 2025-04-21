@@ -1,0 +1,17 @@
+{
+    "name": "@chimera/ui.styles",
+    "version": "0.1.0",
+    "private": false,
+    "main": "src/index.ts",
+    "publishConfig": {
+        "registry": "https://npm.cloudsmith.io/chimera/chimera/"
+    },
+    "peerDependencies": {
+        "tailwindcss": "^3.4.1",
+        "autoprefixer": "^10.4.15"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.1",
+        "autoprefixer": "^10.4.15"
+    }
+}
