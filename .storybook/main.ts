@@ -21,6 +21,7 @@ const config: StorybookConfig = {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
       '@chimera/ui.card': path.resolve(process.cwd(), 'packages/ui/card/src'),
+      '@chimera/ui.icon': path.resolve(process.cwd(), 'packages/ui/icon/src'),
     };
     return config;
   },

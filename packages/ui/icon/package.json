@@ -1,0 +1,19 @@
+{
+    "name": "@chimera/ui.icon",
+    "version": "0.1.0",
+    "private": false,
+    "main": "src/index.ts",
+    "publishConfig": {
+        "registry": "https://npm.cloudsmith.io/chimera/chimera/"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "lucide-react": "^0.276.0"
+    },
+    "devDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "lucide-react": "^0.276.0"
+    }
+}
