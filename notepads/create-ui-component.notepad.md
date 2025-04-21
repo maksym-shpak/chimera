@@ -18,6 +18,8 @@ This notepad is used to scaffold a new UI component package under `packages/ui`.
 - [ ] Add `src/index.ts` and `src/Card.tsx`
 - [ ] Add test: `src/Card.test.tsx`
 - [ ] Add Storybook: `apps/storybook/stories/Card.stories.tsx`
+- [ ] Add entry to Storybook Vite alias in `apps/storybook/.storybook/main.ts`
+- [ ] Add import path to `tsconfig.paths` in root `tsconfig.json`
 - [ ] Add `changeset`
 - [ ] Run `pnpm install` to update lockfile
 
@@ -25,14 +27,15 @@ This notepad is used to scaffold a new UI component package under `packages/ui`.
 
 ## Prompts
 
-### 📦 package.json
+### 📆 package.json
 
 ```
 Generate a minimal package.json for @chimera/ui.card:
 - version: 0.1.0
 - private: false
 - publishConfig pointing to Cloudsmith
-- dependencies: react, react-dom
+- peerDependencies: react, react-dom
+- devDependencies: react, react-dom
 ```
 
 ### 🛠 tsconfig
@@ -50,7 +53,21 @@ Create Card.tsx. It should be a React component that accepts children, className
 ### 📖 Storybook
 
 ```
-Create a story for Card in apps/storybook/stories/Card.stories.tsx. Show default usage with some text.
+Create a story for Card in apps/storybook/stories/Card.stories.tsx. Show default usage with some text. Import from @chimera/ui.card
+```
+
+### 🧹 Storybook Vite alias
+
+```
+In apps/storybook/.storybook/main.ts, add to viteFinal:
+
+@chimera/ui.card: resolve(process.cwd(), 'packages/ui/card/src')
+```
+
+### 🔧 Root tsconfig paths
+
+```
+Add "@chimera/ui.card": ["packages/ui/card/src"] to compilerOptions.paths in root tsconfig.json
 ```
 
 ---
@@ -61,3 +78,4 @@ Create a story for Card in apps/storybook/stories/Card.stories.tsx. Show default
 - No JSDoc, no comments
 - Respect `.cursorrules`
 - Use Tailwind + shadcn style
+
