@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource/inter':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -58,7 +61,7 @@ importers:
         specifier: 8.6.12
         version: 8.6.12(storybook@8.6.12(prettier@2.8.8))
       '@tailwindcss/postcss':
-        specifier: ^4.1.4
+        specifier: ^4.0.0
         version: 4.1.4
       '@types/node':
         specifier: ^22.14.1
@@ -141,6 +144,9 @@ importers:
 
   packages/ui/styles:
     devDependencies:
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.4
       autoprefixer:
         specifier: ^10.4.15
         version: 10.4.21(postcss@8.5.3)
@@ -442,6 +448,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/inter@5.2.5':
+    resolution: {integrity: sha512-kbsPKj0S4p44JdYRFiW78Td8Ge2sBVxi/PIBwmih+RpSXUdvS9nbs1HIiuUSPtRMi14CqLEZ/fbk7dj7vni1Sg==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -2786,6 +2795,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.25.2':
     optional: true
+
+  '@fontsource/inter@5.2.5': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:

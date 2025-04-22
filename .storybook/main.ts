@@ -27,16 +27,6 @@ const config: StorybookConfig = {
       '@chimera/lib.utils': path.resolve(process.cwd(), 'packages/lib/utils/src'),
     };
 
-    config.css = {
-      ...(config.css || {}),
-      postcss: {
-        plugins: [
-          (await import('@tailwindcss/postcss')).default,
-          (await import('autoprefixer')).default,
-        ],
-      },
-    };
-
     return config;
   },
 };

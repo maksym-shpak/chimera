@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitest/config';
+import tailwindcss from '@tailwindcss/vite'
+
 import path from 'path';
 
 export default defineConfig({
@@ -12,7 +14,11 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            '@chimera/*': path.resolve(__dirname, 'packages/*/src')
+            '@chimera/*': path.resolve(__dirname, 'packages/*/src'),
+            '@chimera/ui.styles': path.resolve(process.cwd(), 'packages/ui/styles/src')
         }
-    }
+    },
+    plugins: [
+        tailwindcss(),
+    ],
 }); 
