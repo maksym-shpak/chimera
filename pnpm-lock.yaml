@@ -103,6 +103,15 @@ importers:
         specifier: ^2.3.0
         version: 2.6.0
 
+  packages/ui/avatar:
+    devDependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+
   packages/ui/card:
     devDependencies:
       react:
