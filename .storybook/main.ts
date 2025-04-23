@@ -24,6 +24,7 @@ const config: StorybookConfig = {
       '@chimera/ui.stat-card': path.resolve(process.cwd(), 'packages/ui/stat-card/src'),
       '@chimera/ui.styles': path.resolve(process.cwd(), 'packages/ui/styles/src'),
       '@chimera/lib.utils': path.resolve(process.cwd(), 'packages/lib/utils/src'),
+      '@chimera/ui.chart-overview': path.resolve(process.cwd(), 'packages/ui/chart-overview/src'),
     };
 
     return config;
