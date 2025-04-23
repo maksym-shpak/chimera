@@ -1,7 +1,6 @@
-import type { Config } from 'tailwindcss';
-import { join } from 'path';
+const { join } = require('path');
 
-const config: Config = {
+module.exports = {
     content: [
         join(__dirname, 'packages/**/*.{js,ts,jsx,tsx}'),
         join(__dirname, 'apps/**/*.{js,ts,jsx,tsx}'),
@@ -10,12 +9,9 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                background: 'hsl(var(--background))',
-                foreground: 'hsl(var(--foreground))',
+                debug: '#f0f', // рожевий
             },
         },
     },
     plugins: [],
 };
-
-export default config;

@@ -16,7 +16,5 @@
     "include": [
         "packages/**/*",
         "apps/**/*",
-        "tailwind.config.ts",
-        "postcss.config.js"
     ]
 }

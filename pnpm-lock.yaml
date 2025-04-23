@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@fontsource/inter':
-        specifier: ^5.2.5
-        version: 5.2.5
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
@@ -60,15 +57,9 @@ importers:
       '@storybook/test':
         specifier: 8.6.12
         version: 8.6.12(storybook@8.6.12(prettier@2.8.8))
-      '@tailwindcss/postcss':
-        specifier: ^4.0.0
-        version: 4.1.4
       '@types/node':
         specifier: ^22.14.1
         version: 22.14.1
-      '@types/storybook__react':
-        specifier: ^5.2.1
-        version: 5.2.1(@storybook/test@8.6.12(storybook@8.6.12(prettier@2.8.8)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(storybook@8.6.12(prettier@2.8.8))(typescript@5.8.3)
       '@vitest/browser':
         specifier: 3.1.1
         version: 3.1.1(playwright@1.52.0)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1))(vitest@3.1.1)
@@ -94,8 +85,8 @@ importers:
         specifier: 8.6.12
         version: 8.6.12(prettier@2.8.8)
       tailwindcss:
-        specifier: ^4.1.4
-        version: 4.1.4
+        specifier: ^3.4.3
+        version: 3.4.17
       vitest:
         specifier: ^3.1.1
         version: 3.1.1(@types/node@22.14.1)(@vitest/browser@3.1.1)(happy-dom@17.4.4)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1)
@@ -448,9 +439,6 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
-
-  '@fontsource/inter@5.2.5':
-    resolution: {integrity: sha512-kbsPKj0S4p44JdYRFiW78Td8Ge2sBVxi/PIBwmih+RpSXUdvS9nbs1HIiuUSPtRMi14CqLEZ/fbk7dj7vni1Sg==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -951,10 +939,6 @@ packages:
 
   '@types/resolve@1.20.6':
     resolution: {integrity: sha512-A4STmOXPhMUtHH+S6ymgE2GiBSMqf4oTvcQZMcHzokuTLVYzXTB8ttjcgxOVaAp2lGwEdzZ0J+cRbbeevQj1UQ==}
-
-  '@types/storybook__react@5.2.1':
-    resolution: {integrity: sha512-p4QGO+VjEO3YxyWVHpPylNheA0JhStzoCg6RBTmdobrC0ZqLPEIIWu0pFkHlNkmGIiEKW2yDGFJooBe8M4Df0Q==}
-    deprecated: Deprecated
 
   '@types/uuid@9.0.8':
     resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
@@ -2796,8 +2780,6 @@ snapshots:
   '@esbuild/win32-x64@0.25.2':
     optional: true
 
-  '@fontsource/inter@5.2.5': {}
-
   '@isaacs/cliui@8.0.2':
     dependencies:
       string-width: 5.1.2
@@ -3307,16 +3289,6 @@ snapshots:
       csstype: 3.1.3
 
   '@types/resolve@1.20.6': {}
-
-  '@types/storybook__react@5.2.1(@storybook/test@8.6.12(storybook@8.6.12(prettier@2.8.8)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(storybook@8.6.12(prettier@2.8.8))(typescript@5.8.3)':
-    dependencies:
-      '@storybook/react': 8.6.12(@storybook/test@8.6.12(storybook@8.6.12(prettier@2.8.8)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(storybook@8.6.12(prettier@2.8.8))(typescript@5.8.3)
-    transitivePeerDependencies:
-      - '@storybook/test'
-      - react
-      - react-dom
-      - storybook
-      - typescript
 
   '@types/uuid@9.0.8': {}
 

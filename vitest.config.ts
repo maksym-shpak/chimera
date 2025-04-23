@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitest/config';
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from 'tailwindcss'
 
 import path from 'path';
 
