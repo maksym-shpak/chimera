@@ -29,6 +29,11 @@ const config: StorybookConfig = {
       '@chimera/ui.sales': path.resolve(process.cwd(), 'packages/ui/sales/src'),
       '@chimera/data.use-stats-overview': path.resolve(process.cwd(), 'packages/data/use-stats-overview/src'),
       '@chimera/widgets.stat-overview': path.resolve(process.cwd(), 'packages/widgets/stat-overview/src'),
+      '@chimera/data.use-chart-overview': path.resolve(process.cwd(), 'packages/data/use-chart-overview/src'),
+      '@chimera/widgets.stat-chart': path.resolve(process.cwd(), 'packages/widgets/stat-chart/src'),
+      '@chimera/data.use-sales-overview': path.resolve(process.cwd(), 'packages/data/use-sales-overview/src'),
+      '@chimera/widgets.stat-sales': path.resolve(process.cwd(), 'packages/widgets/stat-sales/src'),
+      '@chimera/layouts.dashboard': path.resolve(process.cwd(), 'packages/layouts/dashboard/src'),
     };
 
     return config;

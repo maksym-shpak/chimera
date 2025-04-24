@@ -94,11 +94,48 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(@types/node@22.14.1)(@vitest/browser@3.1.1)(happy-dom@17.4.4)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1)
 
+  packages/data/use-chart-overview:
+    devDependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+
+  packages/data/use-sales-overview:
+    dependencies:
+      '@chimera/ui.sales':
+        specifier: workspace:*
+        version: link:../../ui/sales
+    devDependencies:
+      '@chimera/ui.icon':
+        specifier: workspace:*
+        version: link:../../ui/icon
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+
   packages/data/use-stats-overview:
     devDependencies:
       '@chimera/ui.icon':
         specifier: '*'
         version: 0.1.1(lucide-react@0.276.0(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+
+  packages/layouts/dashboard:
+    devDependencies:
+      '@chimera/lib.utils':
+        specifier: workspace:*
+        version: link:../../lib/utils
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -193,6 +230,21 @@ importers:
         specifier: ^3.4.1
         version: 3.4.17
 
+  packages/widgets/stat-chart:
+    devDependencies:
+      '@chimera/data.use-chart-overview':
+        specifier: workspace:*
+        version: link:../../data/use-chart-overview
+      '@chimera/ui.chart-overview':
+        specifier: workspace:*
+        version: link:../../ui/chart-overview
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+
   packages/widgets/stat-overview:
     devDependencies:
       '@chimera/data.use-stats-overview':
@@ -201,6 +253,21 @@ importers:
       '@chimera/ui.stat-card':
         specifier: workspace:*
         version: link:../../ui/stat-card
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+
+  packages/widgets/stat-sales:
+    devDependencies:
+      '@chimera/data.use-sales-overview':
+        specifier: workspace:*
+        version: link:../../data/use-sales-overview
+      '@chimera/ui.sales':
+        specifier: workspace:*
+        version: link:../../ui/sales
       react:
         specifier: ^18.2.0
         version: 18.3.1
