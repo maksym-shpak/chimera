@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Card } from '@chimera/ui.card';
 import { LucideIcon } from '@chimera/ui.icon';
 import { cn } from '@chimera/lib.utils';
 
 type StatCardProps = {
-    icon: LucideIcon;
+    icon: ReactNode;
     label: string;
     value: string | number;
     delta?: string;

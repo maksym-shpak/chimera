@@ -2,7 +2,7 @@ import React from 'react';
 import { SalesList } from '@chimera/ui.sales';
 
 export default {
-    title: 'Dashboard/SalesList',
+    title: 'UI/SalesList',
     component: SalesList,
 };
 

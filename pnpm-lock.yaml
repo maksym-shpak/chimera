@@ -94,6 +94,18 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(@types/node@22.14.1)(@vitest/browser@3.1.1)(happy-dom@17.4.4)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1)
 
+  packages/data/use-stats-overview:
+    devDependencies:
+      '@chimera/ui.icon':
+        specifier: '*'
+        version: 0.1.1(lucide-react@0.276.0(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+
   packages/lib/utils:
     devDependencies:
       clsx:
@@ -180,6 +192,21 @@ importers:
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.17
+
+  packages/widgets/stat-overview:
+    devDependencies:
+      '@chimera/data.use-stats-overview':
+        specifier: workspace:*
+        version: link:../../data/use-stats-overview
+      '@chimera/ui.stat-card':
+        specifier: workspace:*
+        version: link:../../ui/stat-card
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
 
 packages:
 
@@ -319,6 +346,13 @@ packages:
 
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
+
+  '@chimera/ui.icon@0.1.1':
+    resolution: {integrity: sha512-bQlsFOGf1jRR0hVCg/HoahnqrJjFl50e6VQ4F44ABJwNPlSiMdRVdtehWmggdSPOjOHiW3oI+hzO3dLR59/oLA==, tarball: https://npm.cloudsmith.io/chimera/chimera/@chimera/ui.icon/-/0.1.1/ui.icon-0.1.1.tgz}
+    peerDependencies:
+      lucide-react: ^0.276.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   '@chromatic-com/storybook@3.2.6':
     resolution: {integrity: sha512-FDmn5Ry2DzQdik+eq2sp/kJMMT36Ewe7ONXUXM2Izd97c7r6R/QyGli8eyh/F0iyqVvbLveNYFyF0dBOJNwLqw==}
@@ -2849,6 +2883,12 @@ snapshots:
       fs-extra: 7.0.1
       human-id: 4.1.1
       prettier: 2.8.8
+
+  '@chimera/ui.icon@0.1.1(lucide-react@0.276.0(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      lucide-react: 0.276.0(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@chromatic-com/storybook@3.2.6(react@19.1.0)(storybook@8.6.12(prettier@2.8.8))':
     dependencies:

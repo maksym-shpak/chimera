@@ -12,7 +12,7 @@ const data = [
 ];
 
 export default {
-    title: 'Dashboard/ChartOverview',
+    title: 'UI/ChartOverview',
     component: ChartOverview,
 };
 
