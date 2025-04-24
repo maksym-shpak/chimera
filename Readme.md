@@ -1,5 +1,7 @@
 # 🌟 Chimera
 
+[![Visual Testing with Chromatic](https://img.shields.io/badge/Chromatic-tested-brightgreen?logo=storybook)](https://www.chromatic.com/library?appId=68049c61c290f0ca3eb5051c&branch=main)
+
 Chimera is a real-life enterprise architecture powered by reusable components, a data layer, and real-time friendly UI. It brings together modern frontend practices, visual regression testing, and composable design systems in one delightful monorepo.
 
 ---
@@ -61,6 +63,9 @@ Every component and widget has an isolated Storybook story. We use **Chromatic**
 - Automate UI approvals
 
 Run regression in less than one minute on every commit.
+
+🔗 [Live Chromatic Library](https://www.chromatic.com/library?appId=68049c61c290f0ca3eb5051c&branch=main)  
+🌍 [Public Storybook Preview](https://main--68049c61c290f0ca3eb5051c.chromatic.com/)
 
 ---
 
